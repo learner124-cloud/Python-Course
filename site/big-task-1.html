@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Secret Agent Mission &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone active" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Python Super-Agent Basics
+  &nbsp;/&nbsp; Milestone Project
+</div>
+
+<article>
+  <h1>The Secret Agent Mission</h1>
+<hr>
+<p>⭐ <strong>Mini-Project Milestone #1</strong> (After Lessons 1 – 5)</p>
+<p>Congratulations, Ali! You have mastered the core foundations of Python:</p>
+<ul>
+<li>🖨️ Printing &amp; Data Types (<a class="wikilink" href="lesson-1.html" data-wikilink="Lesson 1 -- Basics Of Python">Lesson 1 -- Basics Of Python</a>)</li>
+<li>📦 Variables &amp; Math (<a class="wikilink" href="lesson-1.html" data-wikilink="Lesson 1 -- Basics Of Python">Lesson 1 -- Basics Of Python</a>)</li>
+<li>🎤 Asking questions with <code>input()</code> (<a class="wikilink" href="lesson-2.html" data-wikilink="Lesson 2 -- Talking to Python with Input">Lesson 2 -- Talking to Python with Input</a>)</li>
+<li>🚦 Making decisions with <code>if</code>, <code>elif</code>, <code>else</code> (<a class="wikilink" href="lesson-3.html" data-wikilink="Lesson 3 -- Making Decisions with If and Else">Lesson 3 -- Making Decisions with If and Else</a>)</li>
+<li>🔐 Super logic with <code>and</code>, <code>or</code>, <code>not</code> (<a class="wikilink" href="lesson-4.html" data-wikilink="Lesson 4 -- Logic and Secret Passwords">Lesson 4 -- Logic and Secret Passwords</a>)</li>
+<li>🔄 Repeating actions with <code>for</code> loops (<a class="wikilink" href="lesson-5.html" data-wikilink="Lesson 5 -- For Loops and Repeating Magic">Lesson 5 -- For Loops and Repeating Magic</a>)</li>
+</ul>
+<p>Now, it is time to combine all these superpowers together to build your <strong>very first complete text-adventure game</strong>!</p>
+<hr>
+<h3>📜 The Story Briefing</h3>
+<blockquote>
+<p>Evil villain <strong>Dr. Glitch</strong> has locked the city's supercomputer inside his high-tech fortress! 
+Only <strong>Agent Ali</strong> can sneak inside, disable the security systems, crack the vault code, and save the day!</p>
+</blockquote>
+<hr>
+<h3>🎯 Mission Objectives (Step-by-Step)</h3>
+<p>Your program must have <strong>4 interactive phases</strong>:</p>
+<h4>Phase 1: Agent Identification</h4>
+<ul>
+<li>Welcome the player and ask for their agent name.</li>
+<li>Store their name in a variable like <code>agent_name</code>.</li>
+<li>Give them a starting energy score: <code>energy = 100</code>.</li>
+<li>Print a cool welcome message: <code>"Welcome, Agent {agent_name}! Initial energy: 100"</code>.</li>
+</ul>
+<h4>Phase 2: The Electric Gate Puzzle</h4>
+<ul>
+<li>The gate is locked with a math puzzle!</li>
+<li>Print: <code>"⚡ To hack the electric gate, calculate: 25 multiplied by 4 minus 10!"</code></li>
+<li>Ask the player for their answer using <code>int(input("Enter code: "))</code>.</li>
+<li>The correct code is <code>25 * 4 - 10</code> (which is <code>90</code>!).</li>
+<li>Use an <code>if</code> statement:</li>
+<li>If they get it right: <code>"✅ Gate hacked! Security system deactivated!"</code></li>
+<li>If they get it wrong: <code>"⚡ Zap! An electric shock hit you! -20 energy!"</code> (subtract 20 from energy).</li>
+</ul>
+<h4>Phase 3: The Laser Hallway (The Loop!)</h4>
+<ul>
+<li>Dr. Glitch placed 5 red laser beams in the hallway!</li>
+<li>Use a <code>for</code> loop with <code>range(1, 6)</code> to disarm all 5 lasers:</li>
+</ul>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>for laser in range(1, 6):
+    print(f&quot;🔴 Jumping over Laser #{laser}... Deactivated!&quot;)
+</pre></div>
+<ul>
+<li>Print <code>"🏃 Phew! All 5 lasers cleared!"</code></li>
+</ul>
+<h4>Phase 4: The Final Vault Choice</h4>
+<ul>
+<li>Agent Ali arrives at the vault! There are 3 buttons:</li>
+<li><code>1</code>: Blue Button</li>
+<li><code>2</code>: Red Button</li>
+<li><code>3</code>: Golden Button</li>
+<li>Ask the player: <code>"Which button do you press (1, 2, or 3)? "</code></li>
+<li>Use <code>if</code>, <code>elif</code>, and <code>else</code>:</li>
+<li><strong>Button 1</strong>: Dr. Glitch's confetti trap goes off! (Harmless fun).</li>
+<li><strong>Button 2</strong>: The alarm sounds, but Ali grabs the USB drive just in time!</li>
+<li><strong>Button 3</strong>: The vault opens smoothly! Ali recovers the master data chip!</li>
+<li><strong>Else</strong>: Invalid button, but Ali kicks the door open anyway like a true hero!</li>
+</ul>
+<h4>Phase 5: Mission Debriefing</h4>
+<ul>
+<li>Print a victory banner:
+  <code>text
+  ===========================================
+  🎉 MISSION ACCOMPLISHED, AGENT ALI! 🎉
+  You defeated Dr. Glitch and saved the city!
+  Final Energy: 100 / 100
+  ===========================================</code></li>
+</ul>
+<hr>
+<h3>💡 Starter Code Template for Ali</h3>
+<p>Open a new Python file called <code>secret_agent_game.py</code> and assemble your mission:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre># ---------------------------------------------
+# Big Task 1: The Secret Agent Mission
+# Coded by: Agent Ali
+# ---------------------------------------------
+
+print(&quot;🕵️ Dr. Glitch's Fortress Infiltration 🕵️&quot;)
+
+# Phase 1: Agent ID
+agent_name = input(&quot;Enter your Agent Codename: &quot;)
+energy = 100
+print(f&quot;Welcome, Agent {agent_name}! Energy Level: {energy}&quot;)
+
+# Phase 2: Math Puzzle
+print(&quot;\n--- Phase 2: The Security Gate ---&quot;)
+gate_answer = int(input(&quot;Crack the code: What is 25 * 4 - 10? &quot;))
+if gate_answer == 90:
+    print(&quot;✅ Access Granted! Gate unlocked!&quot;)
+else:
+    print(&quot;⚡ BZZT! Wrong code! Lost 20 energy!&quot;)
+    energy = energy - 20
+
+# Phase 3: Laser Hallway
+print(&quot;\n--- Phase 3: Laser Grid ---&quot;)
+for laser in range(1, 6):
+    print(f&quot;🔴 Jumping over Laser #{laser}... CLEARED!&quot;)
+
+# Phase 4: Vault Choice
+print(&quot;\n--- Phase 4: The Vault Door ---&quot;)
+choice = int(input(&quot;Pick a button (1: Blue, 2: Red, 3: Gold): &quot;))
+if choice == 1:
+    print(&quot;🎉 Confetti explodes everywhere! You grab the data!&quot;)
+elif choice == 2:
+    print(&quot;🚨 Sirens blare, but your super speed saves the day!&quot;)
+elif choice == 3:
+    print(&quot;🏆 The vault slides open silently. Flawless victory!&quot;)
+else:
+    print(&quot;💥 You karate-kick the door open!&quot;)
+
+# Phase 5: Victory!
+print(&quot;\n========================================&quot;)
+print(f&quot;MISSION COMPLETE! Agent {agent_name} Wins!&quot;)
+print(f&quot;Final Energy Score: {energy}&quot;)
+print(&quot;========================================&quot;)
+</pre></div>
+<hr>
+<h3>🏅 Agent Ali's Badge of Honor</h3>
+<p>When you finish and run your code in the console, you have officially graduated to <strong>Python Level 2: Game Coder</strong>! 🎖️</p>
+<p>👉 <strong>Next Lesson:</strong> <a class="wikilink" href="lesson-6.html" data-wikilink="Lesson 6 -- While Loops and Game Loops">Lesson 6 -- While Loops and Game Loops</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="big-task-1" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-5.html"><span class="dir">&larr; Previous</span><span class="nm">For Loops &amp; Repeating Magic</span></a><a class="next" href="lesson-6.html"><span class="dir">Next &rarr;</span><span class="nm">While Loops &amp; Game Loops</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

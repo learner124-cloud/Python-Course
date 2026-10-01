@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Loops and Repeating Magic &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item active" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Python Super-Agent Basics
+  &nbsp;/&nbsp; Lesson
+</div>
+
+<article>
+  <h1>For Loops and Repeating Magic</h1>
+<hr>
+<p>Imagine if your coach told you to do 50 jumping jacks. In code, would you type <code>print("Jumping jack!")</code> 50 times? No way, that's exhausting! 😴</p>
+<p>Computers NEVER get tired. They can do things thousands of times in a blink of an eye. </p>
+<p>To repeat instructions without retyping them, we use a magical Python tool called a <strong>For Loop</strong>!</p>
+<hr>
+<h3>The Explainer: How <code>for</code> and <code>range()</code> Work</h3>
+<p>In Python, a <code>for</code> loop works with a helper function named <code>range()</code>.</p>
+<p>Think of <code>range(5)</code> like a list of numbers: <code>0, 1, 2, 3, 4</code>.
+The loop picks up each number one by one, stores it in a counter variable, and runs the code block!</p>
+<div class="callout important"><div class="callout-head">⚠️ Important &mdash; Python Counts from 0!</div><div class="callout-body"><p>In computer science, Python starts counting at <code>0</code> instead of <code>1</code>:
+
+- <code>range(5)</code> counts: <code>0, 1, 2, 3, 4</code> (That is still 5 numbers in total!)
+- If you want to count from 1 to 5, you write: <code>range(1, 6)</code> (Python stops right before the second number!).
+- If you want to count backwards: <code>range(10, 0, -1)</code> (Starts at 10, counts down by -1, stops at 1).</p></div></div>
+
+<hr>
+<h3>The Code: Casting Repeating Spells</h3>
+<p>Let's print a message 4 times:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>for step in range(4):
+    print(&quot;👟 Step number&quot;, step)
+</pre></div>
+<p>Now let's count from 1 to 10:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>for number in range(1, 11):
+    print(f&quot;Number: {number}&quot;)
+</pre></div>
+<p>We can even make Python calculate math tables automatically! Look at the 7 Times Table:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>print(&quot;--- 7 Times Table ---&quot;)
+for i in range(1, 11):
+    result = 7 * i
+    print(f&quot;7 x {i} = {result}&quot;)
+</pre></div>
+<hr>
+<h3>The Task: 🎯 The NASA Rocket Blastoff Countdown!</h3>
+<p>Commander Ali, your mission to Mars is ready for launch!</p>
+<p>Write a Python countdown program:</p>
+<ol>
+<li>Print <code>"🚀 NASA Countdown Starting..."</code></li>
+<li>Use a <code>for</code> loop with <code>range(10, 0, -1)</code> to count down from <code>10</code> down to <code>1</code>.</li>
+<li>Inside the loop, print each second: <code>"T-minus 10...", "T-minus 9..."</code> and so on.</li>
+<li>
+<p>When the loop finishes, print:
+   <code>"🔥 3... 2... 1... BLASTOFF! 🚀 The rocket zooms into space!"</code></p>
+</li>
+<li>
+<p><strong>Bonus</strong>: Add a second loop that prints <code>"✨ Flying past star 1"</code>, <code>"✨ Flying past star 2"</code> up to star 5!</p>
+</li>
+</ol>
+<div class="callout tip"><div class="callout-head">💡 Tip &mdash; Code Preview</div><div class="callout-body"><div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>print(&quot;🚀 NASA Countdown Starting...&quot;)
+for sec in range(10, 0, -1):
+    print(f&quot;T-minus {sec}...&quot;)
+print(&quot;🔥 BLASTOFF! 🚀&quot;)
+</pre></div></div></div>
+
+<hr>
+<h3>🌟 Milestone Reached!</h3>
+<p>Congratulations Ali! You have finished the first 5 lessons! 
+Now you are ready for your very first <strong>Big Task Mini-Project</strong>!</p>
+<p>👉 <strong>Next Up:</strong> <a class="wikilink" href="big-task-1.html" data-wikilink="Big Task 1 -- The Secret Agent Mission">Big Task 1 -- The Secret Agent Mission</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="lesson-5" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-4.html"><span class="dir">&larr; Previous</span><span class="nm">Logic and Secret Passwords</span></a><a class="next" href="big-task-1.html"><span class="dir">Next &rarr;</span><span class="nm">BIG TASK 1: Secret Agent</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

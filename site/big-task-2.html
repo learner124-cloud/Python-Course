@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Monster Arena RPG &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone active" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Lists, Functions &amp; Game Creation
+  &nbsp;/&nbsp; Milestone Project
+</div>
+
+<article>
+  <h1>The Monster Arena RPG</h1>
+<hr>
+<p>👑 <strong>Grand Mini-Project Milestone #2 &amp; Course Finale</strong> (After Lessons 6 – 10)</p>
+<p>Ali, look at how far you've come! You started with printing simple words, and now you have the powers of:</p>
+<ul>
+<li>🔄 <code>while</code> loops &amp; game loops (<a class="wikilink" href="lesson-6.html" data-wikilink="Lesson 6 -- While Loops and Game Loops">Lesson 6 -- While Loops and Game Loops</a>)</li>
+<li>🎒 Inventory lists with <code>.append()</code> and <code>.remove()</code> (<a class="wikilink" href="lesson-7.html" data-wikilink="Lesson 7 -- Lists -- The Super Backpack">Lesson 7 -- Lists -- The Super Backpack</a>)</li>
+<li>🔍 Searching through items with loops and <code>in</code> (<a class="wikilink" href="lesson-8.html" data-wikilink="Lesson 8 -- Looping Through Lists">Lesson 8 -- Looping Through Lists</a>)</li>
+<li>⚡ Creating custom superpowers with <code>def</code> functions (<a class="wikilink" href="lesson-9.html" data-wikilink="Lesson 9 -- Functions -- Your Custom Superpowers">Lesson 9 -- Functions -- Your Custom Superpowers</a>)</li>
+<li>🎲 Random dice rolls and dramatic timing (<a class="wikilink" href="lesson-10.html" data-wikilink="Lesson 10 -- Modules and Random Adventures">Lesson 10 -- Modules and Random Adventures</a>)</li>
+</ul>
+<p>Now, it is time for the <strong>Ultimate Boss Project</strong>: A complete, playable, turn-based <strong>Monster Arena RPG Game</strong>!</p>
+<hr>
+<h3>📜 The Story: The Colosseum of Code</h3>
+<blockquote>
+<p>Deep in the Digital Kingdom, the great <strong>Giga-Golem</strong> has challenged the greatest coder in the realm: <strong>Hero Ali</strong>!
+Can you use your potions, calculate your sword strikes, and defeat the beast in battle?</p>
+</blockquote>
+<hr>
+<h3>🎮 Game Features Ali Will Build</h3>
+<ol>
+<li><strong>Player Stats &amp; Inventory</strong>:
+   - <code>player_hp = 100</code>
+   - <code>potions = ["Small Potion", "Mega Potion"]</code></li>
+<li><strong>Monster Stats</strong>:
+   - <code>monster_name = "Giga-Golem"</code>
+   - <code>monster_hp = 90</code></li>
+<li><strong>Turn-Based Battle Loop</strong>:
+   - Runs <code>while player_hp &gt; 0 and monster_hp &gt; 0:</code>
+   - Every round, Ali chooses an action:<ul>
+<li><code>1. Attack ⚔️</code>: Roll random damage between <code>15</code> and <code>30</code>!</li>
+<li><code>2. Drink Potion 🧪</code>: Restores <code>25</code> HP and uses up a potion from your list!</li>
+<li><code>3. Cast Magic Spell ✨</code>: A high-risk, high-reward attack!</li>
+</ul>
+</li>
+<li><strong>Monster Turn</strong>:
+   - If the monster is still alive, it strikes back with <code>random.randint(10, 22)</code> damage!</li>
+<li><strong>Dramatic Suspense</strong>:
+   - Uses <code>time.sleep(1)</code> between turns so the battle feels like a real video game!</li>
+<li><strong>Victory / Defeat Screen</strong>:
+   - Declares Ali the Grand Champion of Python!</li>
+</ol>
+<hr>
+<h3>💻 The Complete Working Arena Game Code</h3>
+<p>Create a file named <code>monster_arena.py</code> and run your game:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre># =======================================================
+# 👑 BIG TASK 2: MONSTER ARENA RPG
+# Master Coded by: Hero Ali
+# =======================================================
+
+import random
+import time
+
+print(&quot;=&quot; * 45)
+print(&quot;⚔️ WELCOME TO THE DIGITAL MONSTER ARENA! ⚔️&quot;)
+print(&quot;=&quot; * 45)
+
+hero_name = input(&quot;Enter your Hero Name: &quot;)
+player_hp = 100
+potions = [&quot;Healing Berry&quot;, &quot;Super Elixir&quot;]
+
+monster_name = &quot;Giga-Golem&quot;
+monster_hp = 90
+
+print(f&quot;\n⚡ {hero_name} steps onto the battlefield!&quot;)
+print(f&quot;👹 A wild {monster_name} roars angrily! (HP: {monster_hp})\n&quot;)
+
+# --- Custom Functions ---
+def show_status():
+    print(&quot;-&quot; * 30)
+    print(f&quot;👤 {hero_name} HP: {player_hp} | 🎒 Potions: {len(potions)}&quot;)
+    print(f&quot;👹 {monster_name} HP: {monster_hp}&quot;)
+    print(&quot;-&quot; * 30)
+
+# --- The Main Battle Loop ---
+while player_hp &gt; 0 and monster_hp &gt; 0:
+    show_status()
+    print(&quot;Choose your action:&quot;)
+    print(&quot;1. Sword Strike ⚔️&quot;)
+    print(&quot;2. Drink Potion 🧪&quot;)
+    print(&quot;3. Lightning Spell ⚡&quot;)
+
+    choice = input(&quot;What do you want to do (1, 2, or 3)? &quot;)
+    print()
+
+    # Action 1: Sword Attack
+    if choice == &quot;1&quot;:
+        damage = random.randint(15, 25)
+        monster_hp -= damage
+        print(f&quot;💥 {hero_name} slashes with their sword for {damage} damage!&quot;)
+
+    # Action 2: Heal with Potion
+    elif choice == &quot;2&quot;:
+        if len(potions) &gt; 0:
+            used_potion = potions.pop(0)
+            player_hp += 30
+            if player_hp &gt; 100:
+                player_hp = 100  # Cap HP at max 100
+            print(f&quot;🧪 You drank {used_potion}! Restored 30 HP!&quot;)
+        else:
+            print(&quot;❌ Your potion bag is empty! You lost your turn!&quot;)
+
+    # Action 3: Magic Spell
+    elif choice == &quot;3&quot;:
+        damage = random.randint(5, 40)
+        monster_hp -= damage
+        print(f&quot;⚡ Crackle! A blast of lightning shocks {monster_name} for {damage} damage!&quot;)
+
+    else:
+        print(&quot;⚠️ You stumbled and hesitated! No action taken!&quot;)
+
+    time.sleep(1)
+
+    # Check if Monster is defeated
+    if monster_hp &lt;= 0:
+        print(f&quot;\n🎉 BOOM! The mighty {monster_name} crumbles into dust!&quot;)
+        break
+
+    # Monster's Turn to Attack!
+    print(f&quot;\n👹 {monster_name} retaliates with an Earth Slam!&quot;)
+    time.sleep(1)
+    monster_damage = random.randint(10, 22)
+    player_hp -= monster_damage
+    print(f&quot;💥 Ouch! You took {monster_damage} damage!\n&quot;)
+    time.sleep(1)
+
+# --- Battle Outcome ---
+print(&quot;\n&quot; + &quot;=&quot; * 45)
+if player_hp &gt; 0:
+    print(f&quot;🏆 VICTORY! {hero_name} WON THE BATTLE! 🏆&quot;)
+    print(&quot;You are officially crowned the Python Arena Champion!&quot;)
+else:
+    print(&quot;💀 You fought bravely, but were defeated! Try again!&quot;)
+print(&quot;=&quot; * 45)
+</pre></div>
+<hr>
+<h3>🎨 Awesome Customization Ideas for Ali</h3>
+<p>Once you test the game, you can make it even cooler:</p>
+<ol>
+<li><strong>New Monsters</strong>: Change the monster to an <em>Alien Robot</em> or <em>Shadow Dragon</em>!</li>
+<li><strong>Super Loot</strong>: Add a special sword that gives bonus attack points!</li>
+<li><strong>Sound Effects</strong>: Print cool sound words like <code>KAPOW!</code>, <code>SWOOSH!</code>, or <code>ZAAAP!</code>!</li>
+</ol>
+<hr>
+<h3>🎓 Ali's Graduation Certificate</h3>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">code</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>================================================================
+🎓 CERTIFICATE OF ACHIEVEMENT
+This certifies that:
+                  🌟 AGENT ALI 🌟
+has successfully conquered the Python Beginner Course!
+You have built variables, loops, decisions, lists, functions,
+and your very own video games!
+================================================================
+</pre></div>
+<hr>
+<p>⬅️ <strong>Previous Lesson:</strong> <a class="wikilink" href="lesson-10.html" data-wikilink="Lesson 10 -- Modules and Random Adventures">Lesson 10 -- Modules and Random Adventures</a> | 🏠 <strong>Back to Course Roadmap:</strong> <a class="wikilink" href="intro.html" data-wikilink="Introduction to Python">Introduction to Python</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="big-task-2" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-10.html"><span class="dir">&larr; Previous</span><span class="nm">Modules &amp; Random Adventures</span></a><a class="next" href="snake-case.html"><span class="dir">Next &rarr;</span><span class="nm">Snake Case or Camel Case</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

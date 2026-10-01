@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modules and Random Adventures &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item active" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Lists, Functions &amp; Game Creation
+  &nbsp;/&nbsp; Lesson
+</div>
+
+<article>
+  <h1>Modules and Random Adventures</h1>
+<hr>
+<p>Every great video game needs surprises! </p>
+<ul>
+<li>What loot drops from a treasure chest? </li>
+<li>Will your attack hit or miss? </li>
+<li>What cards do you get dealt?</li>
+</ul>
+<p>Computers are super predictable by default, but with Python's secret toolboxes called <strong>Modules</strong>, we can add unpredictable randomness and cool dramatic pauses!</p>
+<hr>
+<h3>The Explainer: What is a Module?</h3>
+<p>A <strong>module</strong> is a python file filled with awesome pre-made code and functions written by smart engineers. You can bring these superpowers into your program using the keyword <code>import</code>.</p>
+<p>Two of the most fun modules for making games are:</p>
+<ol>
+<li><code>import random</code>: Lets you roll dice, flip coins, and pick random items!</li>
+<li><code>import time</code>: Lets you pause the computer with <code>time.sleep()</code> for dramatic suspense!</li>
+</ol>
+<hr>
+<h3>The Code: Rolling Dice and Time Pauses</h3>
+<h4>1. Rolling Random Dice with <code>random.randint()</code></h4>
+<p><code>randint(a, b)</code> gives you a random whole number between <code>a</code> and <code>b</code>:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>import random
+
+# Roll a 6-sided die!
+dice_roll = random.randint(1, 6)
+print(f&quot;🎲 You rolled a {dice_roll}!&quot;)
+</pre></div>
+<h4>2. Picking from a List with <code>random.choice()</code></h4>
+<p>Give <code>random.choice()</code> a list, and it plucks one out at random:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>import random
+
+loot_crate = [&quot;Golden Sword&quot;, &quot;Rusty Dagger&quot;, &quot;Legendary Shield&quot;, &quot;100 Diamonds&quot;]
+prize = random.choice(loot_crate)
+
+print(f&quot;🎁 You opened the loot crate and found: {prize}!&quot;)
+</pre></div>
+<h4>3. Dramatic Pauses with <code>time.sleep()</code></h4>
+<p>Make your game feel alive by pausing for a few seconds:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>import time
+
+print(&quot;⚡ Charging laser cannon...&quot;)
+time.sleep(2)  # Pauses for 2 seconds!
+print(&quot;🔥 FIREEEEEEE! 💥&quot;)
+</pre></div>
+<hr>
+<h3>The Task: 🎯 The Mystical Magic 8-Ball</h3>
+<p>Ali, let's create a real working Magic 8-Ball fortune teller!</p>
+<p>Write a program that:</p>
+<ol>
+<li>Imports both <code>random</code> and <code>time</code>.</li>
+<li>Creates a list of fortunes:</li>
+</ol>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>fortunes = [
+    &quot;Yes, definitely! 🌟&quot;,
+    &quot;Ask again later... 😴&quot;,
+    &quot;Outlook looks super awesome! 🚀&quot;,
+    &quot;My sources say NO WAY! 🛑&quot;,
+    &quot;Signs point to YES! ✨&quot;
+]
+</pre></div>
+<ol start="3">
+<li>Asks the player: <code>question = input("Ask the Magic 8-Ball any question: ")</code></li>
+<li>Prints: <code>"🔮 Gazing into the mystical crystal ball..."</code></li>
+<li>Adds a dramatic 2-second pause with <code>time.sleep(2)</code>.</li>
+<li>Uses <code>random.choice(fortunes)</code> to pick an answer and prints it out!</li>
+</ol>
+<div class="callout tip"><div class="callout-head">💡 Tip &mdash; Ask It Questions!</div><div class="callout-body"><p>Run your program and ask: <em>"Will Ali become the greatest coder in the world?"</em> (The Magic 8-Ball will definitely agree!).</p></div></div>
+
+<hr>
+<h3>🏆 Double Milestone Achieved!</h3>
+<p>Congratulations Ali! You have completed all 10 core lessons of the course!
+Now prepare yourself for the ultimate coding challenge... the <strong>Final Boss Project</strong>!</p>
+<p>👉 <strong>Final Project:</strong> <a class="wikilink" href="big-task-2.html" data-wikilink="Big Task 2 -- The Monster Arena RPG">Big Task 2 -- The Monster Arena RPG</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="lesson-10" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-9.html"><span class="dir">&larr; Previous</span><span class="nm">Functions: Custom Superpowers</span></a><a class="next" href="big-task-2.html"><span class="dir">Next &rarr;</span><span class="nm">BIG TASK 2: Monster Arena</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

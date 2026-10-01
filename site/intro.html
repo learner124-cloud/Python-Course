@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Python &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item active" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Getting Started
+  &nbsp;/&nbsp; Start Here
+</div>
+
+<article>
+  <h1>Introduction to Python</h1>
+<p>Python is a programming language. A programming Language is essentially just a language we type into the computers to give them instructions. Python is a strong and readable programming language that is used in many sectors around the world such as machine learning, backend development, and AI.</p>
+<p>In this section I will tell you how to use this course properly:</p>
+<p>There is 4 main parts of course:</p>
+<ul>
+<li>The Explainer: This is the text of the lesson, which explains a topic.</li>
+<li>The Code: This is code snippets given for you to understand.</li>
+<li>The Task: This is the task after each lesson.</li>
+<li>The Big Task: This is a mini project you will get after each 5 lessons.</li>
+</ul>
+<h3>Examples:</h3>
+<p>This is the example of the explainer.</p>
+<hr>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>print(&quot;This is the example of the code.&quot;) 
+</pre></div>
+<hr>
+<h3>This is the example of the task.</h3>
+<p>The task is...</p>
+<h3>Task</h3>
+<p>There is no task in this lesson. You are welcome to jump right into your coding adventure:</p>
+<p>👉 <strong>Next Lesson:</strong> <a class="wikilink" href="lesson-1.html" data-wikilink="Lesson 1 -- Basics Of Python">Lesson 1 -- Basics Of Python</a></p>
+<hr>
+<h2>🗺️ Ali's Python Course Map</h2>
+<p>Welcome aboard, Ali! Here is your roadmap to becoming a Python master:</p>
+<h3>🌟 Part 1: Python Super-Agent Basics</h3>
+<ul>
+<li><a class="wikilink" href="lesson-1.html" data-wikilink="Lesson 1 -- Basics Of Python">Lesson 1 -- Basics Of Python</a> - Print, Data Types, Variables &amp; Math!</li>
+<li><a class="wikilink" href="lesson-2.html" data-wikilink="Lesson 2 -- Talking to Python with Input">Lesson 2 -- Talking to Python with Input</a> - Teach Python to listen and talk back!</li>
+<li><a class="wikilink" href="lesson-3.html" data-wikilink="Lesson 3 -- Making Decisions with If and Else">Lesson 3 -- Making Decisions with If and Else</a> - Give your code a brain to make choices!</li>
+<li><a class="wikilink" href="lesson-4.html" data-wikilink="Lesson 4 -- Logic and Secret Passwords">Lesson 4 -- Logic and Secret Passwords</a> - Unlock secret doors using <code>and</code>, <code>or</code>, and <code>not</code>!</li>
+<li><a class="wikilink" href="lesson-5.html" data-wikilink="Lesson 5 -- For Loops and Repeating Magic">Lesson 5 -- For Loops and Repeating Magic</a> - Cast looping spells to repeat actions effortlessly!</li>
+<li>🏆 <strong><a class="wikilink" href="big-task-1.html" data-wikilink="Big Task 1 -- The Secret Agent Mission">Big Task 1 -- The Secret Agent Mission</a></strong> - Your first major coding project!</li>
+</ul>
+<h3>🚀 Part 2: Lists, Functions &amp; Game Creation</h3>
+<ul>
+<li><a class="wikilink" href="lesson-6.html" data-wikilink="Lesson 6 -- While Loops and Game Loops">Lesson 6 -- While Loops and Game Loops</a> - Build game loops that run until you win!</li>
+<li><a class="wikilink" href="lesson-7.html" data-wikilink="Lesson 7 -- Lists -- The Super Backpack">Lesson 7 -- Lists -- The Super Backpack</a> - Store and organize your inventory of items!</li>
+<li><a class="wikilink" href="lesson-8.html" data-wikilink="Lesson 8 -- Looping Through Lists">Lesson 8 -- Looping Through Lists</a> - Scan through items and find rare treasures!</li>
+<li><a class="wikilink" href="lesson-9.html" data-wikilink="Lesson 9 -- Functions -- Your Custom Superpowers">Lesson 9 -- Functions -- Your Custom Superpowers</a> - Create your own reusable code blocks!</li>
+<li><a class="wikilink" href="lesson-10.html" data-wikilink="Lesson 10 -- Modules and Random Adventures">Lesson 10 -- Modules and Random Adventures</a> - Add surprises, dice rolls, and timers!</li>
+<li>👑 <strong><a class="wikilink" href="big-task-2.html" data-wikilink="Big Task 2 -- The Monster Arena RPG">Big Task 2 -- The Monster Arena RPG</a></strong> - Build a full interactive RPG battle game!</li>
+</ul>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="intro" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev disabled"><span class="dir">&larr; Previous</span><span class="nm">You are at the start</span></a><a class="next" href="lesson-1.html"><span class="dir">Next &rarr;</span><span class="nm">Basics Of Python</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

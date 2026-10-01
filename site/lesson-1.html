@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basics Of Python &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item active" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Python Super-Agent Basics
+  &nbsp;/&nbsp; Lesson
+</div>
+
+<article>
+  <h1>Basics Of Python</h1>
+<hr>
+<h3>Print</h3>
+<p>In python you get output in a textbox named Console. Here is one image of it:</p>
+<p>To get something in this black box of text, you need to use the print function:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>print()
+</pre></div>
+<p>This function takes whatever it has inside it and puts it inside the black box for you to see.</p>
+<h3>Data Types</h3>
+<p>There are 4 main data types in python:</p>
+<p>String: A string in python is whatever is inside quotation marks, doesn't matter what's inside. ex: </p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>&quot;Hello User4592@#$^&amp;*&quot;
+</pre></div>
+<p>Integer: An integer in python is a whole number without any decimals. ex:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>53
+</pre></div>
+<p>Float: Float in python is a number with decimals. ex:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>53.01
+</pre></div>
+<p>Boolean: Boolean in python means True or False. ex:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>is_game_active = True
+is_game_over = False
+</pre></div>
+<h3>Variables</h3>
+<p>Variables are like a container in Python — they store data and values so you can use them whenever you want! A variable can have almost any name, but it must follow 3 golden rules:</p>
+<ol>
+<li><strong>Cannot start with a number</strong>: You cannot name a variable <code>1player</code>, but you CAN name it <code>player1</code> or <code>num1</code>!</li>
+<li><strong>No spaces or special characters</strong>: You cannot use <code>!@#$%^&amp;*</code> or spaces in a variable name.</li>
+<li><strong>Follow a naming style</strong>: In Python, programmers love using <a class="wikilink" href="snake-case.html" data-wikilink="Snake Case or Camel Case">Snake Case or Camel Case</a> to connect multiple words together (like <code>hero_name</code> or <code>superPower</code>).</li>
+</ol>
+<p>Example of variables in action:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>num1 = 6
+num2 = 5
+print(num1 + num2)
+</pre></div>
+<p>Here <code>num1</code> and <code>num2</code> are variables. They store the numbers 6 and 5, and Python adds them together to print <code>11</code>!</p>
+<hr>
+<h3>Arithmetic Operators</h3>
+<p>Arithmetic operators are the math symbols you use to do calculations in Python. Here are the 4 main ones:</p>
+<ol>
+<li><strong>Addition (<code>+</code>)</strong>: Adds numbers together.</li>
+<li><strong>Subtraction (<code>-</code>)</strong>: Subtracts one number from another.</li>
+<li><strong>Multiplication (<code>*</code>)</strong>: Multiplies numbers (in Python we use the asterisk <code>*</code> symbol!).</li>
+<li><strong>Division (<code>/</code>)</strong>: Divides numbers.</li>
+</ol>
+<p>Let's test all four math superpowers:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>print(10 + 5)   # Output: 15
+
+# Subtraction
+print(20 - 8)   # Output: 12
+
+# Multiplication
+print(4 * 5)    # Output: 20
+
+# Division
+print(50 / 2)   # Output: 25.0
+</pre></div>
+<hr>
+<h3>The Task: 🎯 Ali's Super Agent Identity Card</h3>
+<p>Now it's your turn to write real Python code, Ali! Open your Python editor and complete this mission:</p>
+<ol>
+<li>Create a variable called <code>agent_name</code> and set it to <code>"Agent Ali"</code>.</li>
+<li>Create a variable called <code>agent_age</code> and set it to your age (<code>10</code>).</li>
+<li>Create a variable called <code>gadget_power</code> and set it to <code>100</code>.</li>
+<li>Use <code>print()</code> to display your agent details on the console.</li>
+<li>Create a variable <code>power_boost</code> with value <code>50</code>. Calculate your boosted power using <code>gadget_power + power_boost</code> and print the result!</li>
+</ol>
+<div class="callout tip"><div class="callout-head">💡 Tip &mdash; Hint</div><div class="callout-body"><p>Your code can look something like this:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>agent_name = &quot;Agent Ali&quot;
+agent_age = 10
+print(agent_name)
+print(agent_age)
+
+gadget_power = 100
+power_boost = 50
+print(gadget_power + power_boost)
+</pre></div></div></div>
+
+<hr>
+<p>⬅️ <strong>Previous:</strong> <a class="wikilink" href="intro.html" data-wikilink="Introduction to Python">Introduction to Python</a> | ➡️ <strong>Next Lesson:</strong> <a class="wikilink" href="lesson-2.html" data-wikilink="Lesson 2 -- Talking to Python with Input">Lesson 2 -- Talking to Python with Input</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="lesson-1" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="intro.html"><span class="dir">&larr; Previous</span><span class="nm">Intro &amp; Roadmap</span></a><a class="next" href="lesson-2.html"><span class="dir">Next &rarr;</span><span class="nm">Talking to Python with Input</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

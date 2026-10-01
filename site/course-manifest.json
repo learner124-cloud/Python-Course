@@ -1,0 +1,139 @@
+{
+  "title": "Ali's Python Course",
+  "tracked": [
+    "big-task-1",
+    "big-task-2",
+    "lesson-1",
+    "lesson-10",
+    "lesson-2",
+    "lesson-3",
+    "lesson-4",
+    "lesson-5",
+    "lesson-6",
+    "lesson-7",
+    "lesson-8",
+    "lesson-9"
+  ],
+  "pages": [
+    {
+      "id": "intro",
+      "slug": "intro",
+      "title": "Introduction to Python",
+      "part": 0,
+      "kind": "intro",
+      "tracked": false
+    },
+    {
+      "id": "lesson-1",
+      "slug": "lesson-1",
+      "title": "Basics Of Python",
+      "part": 1,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-2",
+      "slug": "lesson-2",
+      "title": "Talking to Python with Input",
+      "part": 1,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-3",
+      "slug": "lesson-3",
+      "title": "Making Decisions with If and Else",
+      "part": 1,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-4",
+      "slug": "lesson-4",
+      "title": "Logic and Secret Passwords",
+      "part": 1,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-5",
+      "slug": "lesson-5",
+      "title": "For Loops and Repeating Magic",
+      "part": 1,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "big-task-1",
+      "slug": "big-task-1",
+      "title": "The Secret Agent Mission",
+      "part": 1,
+      "kind": "bigtask",
+      "tracked": true
+    },
+    {
+      "id": "lesson-6",
+      "slug": "lesson-6",
+      "title": "While Loops and Game Loops",
+      "part": 2,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-7",
+      "slug": "lesson-7",
+      "title": "Lists -- The Super Backpack",
+      "part": 2,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-8",
+      "slug": "lesson-8",
+      "title": "Looping Through Lists",
+      "part": 2,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-9",
+      "slug": "lesson-9",
+      "title": "Functions -- Your Custom Superpowers",
+      "part": 2,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "lesson-10",
+      "slug": "lesson-10",
+      "title": "Modules and Random Adventures",
+      "part": 2,
+      "kind": "lesson",
+      "tracked": true
+    },
+    {
+      "id": "big-task-2",
+      "slug": "big-task-2",
+      "title": "The Monster Arena RPG",
+      "part": 2,
+      "kind": "bigtask",
+      "tracked": true
+    },
+    {
+      "id": "snake-case",
+      "slug": "snake-case",
+      "title": "Snake Case or Camel Case?",
+      "part": 3,
+      "kind": "extra",
+      "tracked": false
+    },
+    {
+      "id": "comparison-operators",
+      "slug": "comparison-operators",
+      "title": "Comparison Operators in Python",
+      "part": 3,
+      "kind": "extra",
+      "tracked": false
+    }
+  ]
+}

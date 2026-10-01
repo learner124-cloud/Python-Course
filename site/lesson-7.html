@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lists -- The Super Backpack &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item active" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Lists, Functions &amp; Game Creation
+  &nbsp;/&nbsp; Lesson
+</div>
+
+<article>
+  <h1>Lists -- The Super Backpack</h1>
+<hr>
+<p>So far, each variable we made could only hold ONE item:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>favorite_food = &quot;Pizza&quot;
+</pre></div>
+<p>What if you have a list of all your favorite foods? Or your Minecraft inventory full of diamonds, swords, apples, and torches? </p>
+<p>You need a <strong>List</strong>! In Python, a list is like a magical superhero backpack that holds as many items as you want!</p>
+<hr>
+<h3>The Explainer: How to Create a List</h3>
+<p>To make a list, you place your items inside square brackets <code>[</code> and <code>]</code>, separated by commas:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>backpack = [&quot;Laser Blaster&quot;, &quot;Health Potion&quot;, &quot;Grappling Hook&quot;]
+</pre></div>
+<h4>The Secret of Indexing (Position Numbers)</h4>
+<p>Just like in <a class="wikilink" href="lesson-5.html" data-wikilink="Lesson 5 -- For Loops and Repeating Magic">Lesson 5 -- For Loops and Repeating Magic</a>, Python numbers list slots starting at <strong>0</strong>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: center;">Position (Index)</th>
+<th style="text-align: left;">Item in Backpack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>backpack[0]</code></td>
+<td style="text-align: left;"><code>"Laser Blaster"</code> (The 1st item!)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>backpack[1]</code></td>
+<td style="text-align: left;"><code>"Health Potion"</code> (The 2nd item!)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>backpack[2]</code></td>
+<td style="text-align: left;"><code>"Grappling Hook"</code> (The 3rd item!)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="callout important"><div class="callout-head">⚠️ Important &mdash; Don't Forget Zero!</div><div class="callout-body"><p>If you want the first item, ask for <code>backpack[0]</code>! If you ask for <code>backpack[1]</code>, you get the second item!</p></div></div>
+
+<hr>
+<h3>The Code: List Magic Tricks</h3>
+<h4>1. Adding an Item: <code>.append()</code></h4>
+<p>When you find loot, pack it in with <code>.append()</code>:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>inventory = [&quot;Shield&quot;, &quot;Sword&quot;]
+inventory.append(&quot;Magic Wand&quot;)
+
+print(inventory)
+# Output: ['Shield', 'Sword', 'Magic Wand']
+</pre></div>
+<h4>2. Removing an Item: <code>.remove()</code> or <code>.pop()</code></h4>
+<p>When you use up a potion, remove it:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>inventory.remove(&quot;Shield&quot;)
+print(inventory)
+# Output: ['Sword', 'Magic Wand']
+</pre></div>
+<h4>3. Counting Items: <code>len()</code></h4>
+<p>How many items are in your bag? Use <code>len()</code> (short for length):</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>total_items = len(inventory)
+print(f&quot;You have {total_items} items in your bag!&quot;)
+</pre></div>
+<hr>
+<h3>The Task: 🎯 Ali's Superhero Gadget Belt</h3>
+<p>Agent Ali, it's time to pack your gadget belt for the next mission!</p>
+<p>Write a program that:</p>
+<ol>
+<li>Creates a list called <code>gadgets</code> with 3 cool items: <code>"Night Vision Goggles"</code>, <code>"Smoke Bomb"</code>, and <code>"Jetpack"</code>.</li>
+<li>Prints: <code>"Initial Gadget Belt:"</code> followed by the list.</li>
+<li>Prints the very first gadget using <code>gadgets[0]</code>.</li>
+<li>Asks Ali to type a brand new gadget to add using <code>new_gadget = input("Find a new gadget to pack: ")</code>.</li>
+<li>Uses <code>.append(new_gadget)</code> to add it to the belt.</li>
+<li>Prints the total number of gadgets on the belt using <code>len(gadgets)</code>.</li>
+<li>Uses <code>.pop(1)</code> or <code>.remove("Smoke Bomb")</code> to use up the smoke bomb, and prints the updated list!</li>
+</ol>
+<div class="callout tip"><div class="callout-head">💡 Tip &mdash; Try it yourself!</div><div class="callout-body"><p>Look how cool it feels to watch your inventory expand and shrink in the console!</p></div></div>
+
+<hr>
+<p>⬅️ <strong>Previous:</strong> <a class="wikilink" href="lesson-6.html" data-wikilink="Lesson 6 -- While Loops and Game Loops">Lesson 6 -- While Loops and Game Loops</a> | ➡️ <strong>Next Lesson:</strong> <a class="wikilink" href="lesson-8.html" data-wikilink="Lesson 8 -- Looping Through Lists">Lesson 8 -- Looping Through Lists</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="lesson-7" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-6.html"><span class="dir">&larr; Previous</span><span class="nm">While Loops &amp; Game Loops</span></a><a class="next" href="lesson-8.html"><span class="dir">Next &rarr;</span><span class="nm">Looping Through Lists</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

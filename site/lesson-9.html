@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Functions -- Your Custom Superpowers &middot; Ali's Python Course</title>
+<meta name="description" content="Ali's Python Course - a fun, kid-friendly introduction to Python programming.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-title">&#128013; Ali's Python Course</div>
+      <div class="brand-sub">Beginner &rarr; Game Coder</div>
+    </a>
+
+    <div class="progress-card">
+      <div class="progress-head">
+        <span class="label">Your Progress</span>
+        <span class="pct" id="sb-pct">0%</span>
+      </div>
+      <div class="bar"><span id="sb-bar"></span></div>
+      <div class="progress-foot">
+        <span id="sb-count">0 / 0 lessons</span>
+        <span class="cheer" id="sb-cheer">Ready to start!</span>
+      </div>
+    </div>
+
+    <nav><div class="nav-part">Getting Started</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="intro.html" data-id="intro" data-label="Intro &amp; Roadmap" data-tracked="0" title="Intro &amp; Roadmap"><span class="nav-dot"></span><span class="nav-num">🏠</span><span class="nav-label">Intro &amp; Roadmap</span></a></li>
+</ul>
+<div class="nav-part">Python Super-Agent Basics</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-1.html" data-id="lesson-1" data-label="Basics Of Python" data-tracked="1" title="Basics Of Python"><span class="nav-dot"></span><span class="nav-num">1</span><span class="nav-label">Basics Of Python</span></a></li>
+<li><a class="nav-item" href="lesson-2.html" data-id="lesson-2" data-label="Talking to Python with Input" data-tracked="1" title="Talking to Python with Input"><span class="nav-dot"></span><span class="nav-num">2</span><span class="nav-label">Talking to Python with Input</span></a></li>
+<li><a class="nav-item" href="lesson-3.html" data-id="lesson-3" data-label="Making Decisions (If / Else)" data-tracked="1" title="Making Decisions (If / Else)"><span class="nav-dot"></span><span class="nav-num">3</span><span class="nav-label">Making Decisions (If / Else)</span></a></li>
+<li><a class="nav-item" href="lesson-4.html" data-id="lesson-4" data-label="Logic and Secret Passwords" data-tracked="1" title="Logic and Secret Passwords"><span class="nav-dot"></span><span class="nav-num">4</span><span class="nav-label">Logic and Secret Passwords</span></a></li>
+<li><a class="nav-item" href="lesson-5.html" data-id="lesson-5" data-label="For Loops &amp; Repeating Magic" data-tracked="1" title="For Loops &amp; Repeating Magic"><span class="nav-dot"></span><span class="nav-num">5</span><span class="nav-label">For Loops &amp; Repeating Magic</span></a></li>
+<li><a class="nav-item milestone" href="big-task-1.html" data-id="big-task-1" data-label="BIG TASK 1: Secret Agent" data-tracked="1" title="BIG TASK 1: Secret Agent"><span class="nav-dot"></span><span class="nav-num">⭐</span><span class="nav-label">BIG TASK 1: Secret Agent</span></a></li>
+</ul>
+<div class="nav-part">Lists, Functions &amp; Game Creation</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="lesson-6.html" data-id="lesson-6" data-label="While Loops &amp; Game Loops" data-tracked="1" title="While Loops &amp; Game Loops"><span class="nav-dot"></span><span class="nav-num">6</span><span class="nav-label">While Loops &amp; Game Loops</span></a></li>
+<li><a class="nav-item" href="lesson-7.html" data-id="lesson-7" data-label="Lists: The Super Backpack" data-tracked="1" title="Lists: The Super Backpack"><span class="nav-dot"></span><span class="nav-num">7</span><span class="nav-label">Lists: The Super Backpack</span></a></li>
+<li><a class="nav-item" href="lesson-8.html" data-id="lesson-8" data-label="Looping Through Lists" data-tracked="1" title="Looping Through Lists"><span class="nav-dot"></span><span class="nav-num">8</span><span class="nav-label">Looping Through Lists</span></a></li>
+<li><a class="nav-item active" href="lesson-9.html" data-id="lesson-9" data-label="Functions: Custom Superpowers" data-tracked="1" title="Functions: Custom Superpowers"><span class="nav-dot"></span><span class="nav-num">9</span><span class="nav-label">Functions: Custom Superpowers</span></a></li>
+<li><a class="nav-item" href="lesson-10.html" data-id="lesson-10" data-label="Modules &amp; Random Adventures" data-tracked="1" title="Modules &amp; Random Adventures"><span class="nav-dot"></span><span class="nav-num">10</span><span class="nav-label">Modules &amp; Random Adventures</span></a></li>
+<li><a class="nav-item milestone" href="big-task-2.html" data-id="big-task-2" data-label="BIG TASK 2: Monster Arena" data-tracked="1" title="BIG TASK 2: Monster Arena"><span class="nav-dot"></span><span class="nav-num">👑</span><span class="nav-label">BIG TASK 2: Monster Arena</span></a></li>
+</ul>
+<div class="nav-part">Bonus Reference Sheets</div>
+<ul class="nav-list">
+<li><a class="nav-item" href="snake-case.html" data-id="snake-case" data-label="Snake Case or Camel Case" data-tracked="0" title="Snake Case or Camel Case"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Snake Case or Camel Case</span></a></li>
+<li><a class="nav-item" href="comparison-operators.html" data-id="comparison-operators" data-label="Comparison Operators" data-tracked="0" title="Comparison Operators"><span class="nav-dot"></span><span class="nav-num">📘</span><span class="nav-label">Comparison Operators</span></a></li>
+</ul></nav>
+
+    <div class="sidebar-actions">
+      <button type="button" id="reset-btn" class="danger">Reset Progress</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <div class="mini-bar">
+        <span class="mini-label">Progress</span>
+        <div class="bar"><span id="mb-bar"></span></div>
+        <span id="mb-txt">0%</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="btn ghost" href="index.html">&#127968; Home</a>
+    </div>
+
+    <div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">Home</a> &nbsp;/&nbsp; Lists, Functions &amp; Game Creation
+  &nbsp;/&nbsp; Lesson
+</div>
+
+<article>
+  <h1>Functions -- Your Custom Superpowers</h1>
+<hr>
+<p>We already know functions that Python built for us, like <code>print()</code>, <code>input()</code>, and <code>len()</code>. </p>
+<p>Did you know you can invent <strong>your own functions</strong> with your own custom names and superpowers? </p>
+<p>Whenever you write a set of code you want to use over and over again, you can bundle it into a <strong>Function</strong>!</p>
+<hr>
+<h3>The Explainer: How to Build a Function</h3>
+<p>Think of a function like a <strong>vending machine</strong> or a <strong>magic spell</strong>:</p>
+<ol>
+<li><strong>Define it</strong>: You teach Python the recipe using the keyword <code>def</code> (short for <em>define</em>).</li>
+<li><strong>Parameters (Ingredients)</strong>: You can give the function information inside <code>()</code> to work with.</li>
+<li><strong>Call it</strong>: Whenever you want Python to do that action, you just say its name with <code>()</code>!</li>
+</ol>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">code</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>def spell_name(parameter):
+    # What the spell does!
+</pre></div>
+<div class="callout important"><div class="callout-head">⚠️ Important &mdash; Don't Forget to Call It!</div><div class="callout-body"><p>Defining a function is just teaching Python how to do something. Python won't actually DO it until you call the function by typing its name with <code>()</code>!</p></div></div>
+
+<hr>
+<h3>The Code: Defining and Calling</h3>
+<p>Here is a simple greeting function:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>def superhero_shout():
+    print(&quot;💥 POW! BAM! Super-Ali to the rescue! 💥&quot;)
+
+# Now call the function whenever danger strikes!
+superhero_shout()
+superhero_shout()
+</pre></div>
+<h4>Functions with Parameters (Passing Information)</h4>
+<p>We can pass information inside the parentheses:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>def greet_hero(hero_name, power_level):
+    print(f&quot;⚡ Welcome {hero_name}! Power level is over {power_level}!&quot;)
+
+# Call it with different heroes:
+greet_hero(&quot;Ali&quot;, 9000)
+greet_hero(&quot;Batman&quot;, 500)
+</pre></div>
+<h4>Returning Answers with <code>return</code></h4>
+<p>A function can do calculations and hand back the final answer:</p>
+<div class="code-block"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="code-lang">python</span><span class="spacer"></span><button class="copy-btn" type="button">Copy</button></div><pre>def double_damage(base_attack):
+    critical_hit = base_attack * 2
+    return critical_hit
+
+final_attack = double_damage(45)
+print(f&quot;Critical Strike dealt {final_attack} damage!&quot;)
+</pre></div>
+<hr>
+<h3>The Task: 🎯 The Wizard Spell Caster</h3>
+<p>Grand Wizard Ali, it's time to build your spellbook!</p>
+<p>Write a program with a custom function:</p>
+<ol>
+<li>
+<p>Define a function called <code>cast_spell(spell_name, target)</code>:
+   - Inside the function, make it print:
+     <code>f"✨ Ali waves his glowing wand and casts {spell_name} at the {target}!"</code></p>
+</li>
+<li>
+<p>Define a second function called <code>calculate_damage(level)</code>:
+   - Inside, multiply <code>level * 15</code>.
+   - Use <code>return</code> to return that number!</p>
+</li>
+<li>Below your functions, call <code>cast_spell("Mega Fireball", "Goblin King")</code>.</li>
+<li>Call <code>damage = calculate_damage(5)</code>.</li>
+<li>Print: <code>f"💥 Direct hit! The spell dealt {damage} points of damage!"</code></li>
+</ol>
+<div class="callout tip"><div class="callout-head">💡 Tip &mdash; Clean Code Superhero</div><div class="callout-body"><p>Look how organized your program looks when you use functions! You can cast 10 different spells with just one line each!</p></div></div>
+
+<hr>
+<p>⬅️ <strong>Previous:</strong> <a class="wikilink" href="lesson-8.html" data-wikilink="Lesson 8 -- Looping Through Lists">Lesson 8 -- Looping Through Lists</a> | ➡️ <strong>Next Lesson:</strong> <a class="wikilink" href="lesson-10.html" data-wikilink="Lesson 10 -- Modules and Random Adventures">Lesson 10 -- Modules and Random Adventures</a></p>
+</article>
+
+<div class="lesson-foot">
+  <div class="complete-row">
+    <div class="txt">
+      <div class="t1">Finished this one?</div>
+      <div class="t2">Mark it complete and your progress bar will jump up. You can undo this any time.</div>
+    </div>
+    <button class="btn primary" type="button" id="complete-btn"
+            data-id="lesson-9" aria-pressed="false">
+      <span>&#11088;</span> Mark This Lesson Complete
+    </button>
+  </div>
+  <div class="pager"><a class="prev" href="lesson-8.html"><span class="dir">&larr; Previous</span><span class="nm">Looping Through Lists</span></a><a class="next" href="lesson-10.html"><span class="dir">Next &rarr;</span><span class="nm">Modules &amp; Random Adventures</span></a></div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
