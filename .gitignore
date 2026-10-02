@@ -20,3 +20,6 @@ desktop.ini
 .playwright-cli/
 *.png
 !site/**/*.png
+
+# ---- local tooling / agent notes ----
+.workbuddy-ai/
