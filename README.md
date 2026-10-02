@@ -59,6 +59,32 @@ The site is plain static HTML/CSS/JS with no build step required to host it.
 **Any other static host** (Netlify, GitHub Pages, Vercel) — just publish the
 `site/` folder.
 
+## Previewing locally
+
+Double-click **`open-course.bat`** (or run `python -m http.server 8000` from
+inside `site/`). It serves the site at <http://127.0.0.1:8000> and opens a
+browser tab.
+
+That address only works on your own computer — it's a private loopback address,
+so nobody else can reach it. To share the course, use the deployed Cloudflare
+URL instead.
+
+## How progress behaves
+
+Progress is stored in the browser (`localStorage`), which means it is **per
+browser, per device**:
+
+| Scenario | Result |
+|---|---|
+| Same computer, same browser, returned to later | ✅ Progress kept |
+| Different computer, or a different browser | ❌ Starts at 0% |
+| Incognito / private window | ❌ Starts at 0%, gone on close |
+| "Clear browsing data" including cookies & site data | ❌ Wiped |
+
+Each person browsing the course gets their own separate progress. Nothing is
+uploaded anywhere — the site has no backend and no accounts.
+
+
 ## Project layout
 
 ```
